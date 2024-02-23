@@ -1,0 +1,48 @@
+{
+  "name": "electron-ai",
+  "version": "1.0.0",
+  "main": "build/dev/main/index.min.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "esr esbuild.main.ts & webpack-dev-server & electron ."
+  },
+  "dev": {
+    "dev-server-port": 3334
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "dotenv": "^16.4.1",
+    "electron": "28.2.1",
+    "lodash": "^4.17.21",
+    "natural": "^6.10.4",
+    "portfinder": "^1.0.32",
+    "qrcode": "^1.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "sass": "^1.70.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "@types/lodash": "^4.14.202",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.2.54",
+    "@types/react-dom": "^18.2.18",
+    "@types/shelljs": "^0.8.15",
+    "add": "^2.0.6",
+    "css-loader": "^6.10.0",
+    "esbuild": "^0.20.1",
+    "esbuild-runner": "^2.2.2",
+    "html-webpack-plugin": "^5.6.0",
+    "module": "^1.2.5",
+    "sass-loader": "^14.1.0",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
